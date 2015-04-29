@@ -28,9 +28,15 @@ public class Main
         
         * Map
         - lukee ja käsittelee kartta tiedoston sisällön ja muuttaa sen pelin sisäiseksi tarinaksi.
+        
+        * GraphicsEngine
+        - Piirtää kaikki pelin objektit.
     
-        * UserInterface
-        - eventlistener
+        * Player
+        - pelaaja hahmo.
+           
+        * EventHandler
+        - käsittelee pelaajan liikkeet.
         */
     
     public static void main(String[] args) 
