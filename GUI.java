@@ -3,24 +3,28 @@ import java.awt.Container;
 import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
+import java.awt.Graphics;
 
 /* ajaa ohjelman graaffisen käyttöliittymän. */
 
 
-public class GUI implements Runnable 
+public class GUI implements Runnable  
 {
-
+    
     /* resoluutio */
     private static int resolutionX;
     private static int resolutionY; 
-    
+    private Player player;
     private JFrame frame;
 
     /* konstruktori */
     public GUI(int resolutionX, int resolutionY) 
-    {
+    {   /*Player pos. hacked */
         this.resolutionX = resolutionX;
         this.resolutionY = resolutionY;
+       
+        
+        this.player = new Player(resolutionX/2, (resolutionY-(resolutionX/6)));
     }
 
     @Override
@@ -39,7 +43,7 @@ public class GUI implements Runnable
 
     private void luoKomponentit(Container container) 
     {
-    
+    container.add(new GraphicsEngine(player));
     }
 
     public JFrame getFrame() 
@@ -47,4 +51,7 @@ public class GUI implements Runnable
         return frame;
     }
 
+    
+ 
+    
 }

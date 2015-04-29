@@ -1,6 +1,7 @@
 package CV_Gamefication;
+import javax.swing.SwingUtilities;
 
-public class Main implements UserInterface
+public class Main 
 {
        /* 
         * Copyright: Tiamo Laitakari (Tiamo.Laitakari(ät)cs.helsinki piste äfii
@@ -45,7 +46,8 @@ public class Main implements UserInterface
         int resolutionY = 640;
         
         GUI start = new GUI(resolutionX, resolutionY);
-        start.run();
+        SwingUtilities.invokeLater(start);
+       
         
         /*********************************************************************
          * 2.
