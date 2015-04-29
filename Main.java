@@ -1,5 +1,5 @@
 package CV_Gamefication;
-import javax.swing.SwingUtilities;
+
 
 public class Main 
 {
@@ -52,7 +52,7 @@ public class Main
         int resolutionY = 640;
         
         GUI start = new GUI(resolutionX, resolutionY);
-        SwingUtilities.invokeLater(start);
+        
        
         
         /*********************************************************************
@@ -76,7 +76,7 @@ public class Main
          * Maailma generaattori on käytännössä vastuussa koko pelin rakenteesta.
          * Pelin päälooppi kutsutaan myös tämän luokan kautta.  
          **********************************************************************/
-        Cardinal CV_Art_Offline = new Cardinal(world, story);
+        Cardinal CV_Art_Offline = new Cardinal(world, story, start);
         /* Sword Art Online tribuutti. */
         
         /**********************************************************************
