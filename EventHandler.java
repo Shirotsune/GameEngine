@@ -8,22 +8,22 @@ public class EventHandler implements KeyListener
 {
 
     private static Player player;
-    private static boolean isAction;
-    private static boolean actionD;
-    private static boolean actionA;
-    private static boolean actionW;
+    private static boolean isAction; //Skeleton Code
+    private static boolean actionD; //Skeleton Code
+    private static boolean actionA; //Skeleton Code
+    private static boolean actionW; //Skeleton Code
     /* Utilises Cardinal version. Player cordinates are not relevant for action listener. */
 
-    public EventHandler(Player player)
+    public EventHandler(Player player) // -!!!- Constructor functions well -!!!-
     {
         this.player = player;
 
-        this.actionA = false;
-        this.actionD = false;
-        this.actionW = false;
+        this.actionA = false; //Skeleton Code
+        this.actionD = false; //Skeleton Code
+        this.actionW = false; //Skeleton Code
     }
 
-    boolean getPlayerState()
+    boolean getPlayerState() /* Skeleton Code */
     {
 
         if (actionD | actionA | actionW == true)
@@ -32,7 +32,7 @@ public class EventHandler implements KeyListener
         }
 
         return false;
-    }
+    } /* Skeleton Code */
 
     @Override
     public void keyPressed(KeyEvent e)
@@ -42,17 +42,17 @@ public class EventHandler implements KeyListener
         if (e.getKeyCode() == (KeyEvent.VK_D))
         {
             player.right();
-            actionD = true;
+            actionD = true; //Skeleton Code
         }
         if (e.getKeyCode() == (KeyEvent.VK_A))
         {
             player.left();
-            actionA = true;
+            actionA = true; //Skeleton Code
         }
         if (e.getKeyCode() == (KeyEvent.VK_W))
         {
             player.jump();
-            actionW = true;
+            actionW = true; //Skeleton Code
         }
 
     }
@@ -63,17 +63,17 @@ public class EventHandler implements KeyListener
         if (e.getKeyCode() == (KeyEvent.VK_D))
         {
             player.rightEnds();
-            actionD = false;
+            actionD = false; //Skeleton Code
         }
         if (e.getKeyCode() == (KeyEvent.VK_A))
         {
             player.leftEnds();
-            actionA = false;
+            actionA = false; //Skeleton Code
         }
         if (e.getKeyCode() == (KeyEvent.VK_W))
         {
             player.jumpEnds();
-            actionW = false;
+            actionW = false; //Skeleton Code
         }
 
 

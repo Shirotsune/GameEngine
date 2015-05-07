@@ -77,8 +77,8 @@ public class Main
          * Pelin päälooppi kutsutaan myös tämän luokan kautta.  
          **********************************************************************/
         Cardinal CV_Art_Offline = new Cardinal(world, story, start);
-        /* Sword Art Online tribuutti. */
         
+       
         /**********************************************************************
          * 4.
          * (Cardinalin API dokumentaatio löytyy Cardinal tiedoston sisältä.)

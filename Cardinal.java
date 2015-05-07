@@ -95,6 +95,7 @@ public class Cardinal extends Main
             
             player.PlayerAction(); /* There'll be some skeleton code @EventHandler.java clean up when time.*/
             start.refresh(); /* Refresh the frame after all actions have been computed. */
+        /* Next gen release: pararellisation with rendering. */
         }
     }
 
