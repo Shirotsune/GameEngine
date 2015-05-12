@@ -7,20 +7,20 @@ import java.awt.Graphics;
 import javax.swing.SwingUtilities;
 
 
-/* ajaa ohjelman graaffisen käyttöliittymän. */
+/* Runs the graphical UI */
 
 
 public class GUI implements Runnable  
 {
     
-    /* resoluutio */
+    /* Resolution */
     private static int resolutionX;
     private static int resolutionY; 
     private Player player;
     private JFrame frame;
     GraphicsEngine GE;  
 
-    /* konstruktori */
+    /* Constructor */
     public GUI(int resolutionX, int resolutionY) 
     {   /*Player pos. hacked */
         this.resolutionX = resolutionX;
@@ -28,7 +28,7 @@ public class GUI implements Runnable
         
         this.player = new Player(resolutionX/2, (resolutionY-(resolutionX/6)));
         this.GE = new GraphicsEngine(player);
-       // SwingUtilities.invokeLater(this.GE);
+       
     }
 
     @Override
@@ -39,17 +39,17 @@ public class GUI implements Runnable
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        luoKomponentit(frame.getContentPane());
+        Create(frame.getContentPane());
 
         frame.pack();
         frame.setVisible(true);
     }
 
-    private void luoKomponentit(Container container) 
+    private void Create(Container container) 
     {
-        container.add(GE);
+        container.add(GE); // Renders player object.
         
-        frame.addKeyListener(new EventHandler(player));
+        frame.addKeyListener(new EventHandler(player)); //Allows monitoring keybord input in swing utilities.
     }
 
     public JFrame getFrame() 
