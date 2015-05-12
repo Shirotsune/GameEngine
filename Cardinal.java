@@ -82,20 +82,17 @@ public class Cardinal extends Main
          */
         while (playing == true)
         {
-          //  player.siirry(1,0);
-
+          
             try 
             {
                 Thread.sleep(25); /* Defines FPS */
             }catch(InterruptedException ex){
                 Thread.currentThread().interrupt();
             }
-            //playerAction = true;
-            //player.right();
             
             player.PlayerAction(); /* There'll be some skeleton code @EventHandler.java clean up when time.*/
             start.refresh(); /* Refresh the frame after all actions have been computed. */
-        /* Next gen release: pararellisation with rendering. */
+            /* Next gen release: pararellisation with rendering. */
         }
     }
 

@@ -7,10 +7,10 @@ import java.awt.event.KeyListener;
 public class EventHandler implements KeyListener
 {
 
-    private static Player player;
+    private Player player;
     /* Utilises Cardinal version. Player cordinates are not relevant for action listener. */
 
-    public EventHandler(Player player) // -!!!- Constructor functions well -!!!-
+    public EventHandler(Player player) 
     {
         this.player = player;
     }

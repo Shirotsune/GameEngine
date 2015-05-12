@@ -22,7 +22,7 @@ public class GraphicsEngine extends JPanel {
     @Override
     protected void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
-        player.draw(graphics);
+        player.draw(graphics); /* Utilisation ok */
     }
 
 }
