@@ -18,7 +18,15 @@ public class EventHandler implements KeyListener
     @Override
     public void keyPressed(KeyEvent e)
     {
-
+    
+    // When a key is pressed, the players boolean changing function is called. After it is released it becomes false.
+    // This is used in conjugation of the playerAction(); inside cardinal to determine, if the player wants to move.
+    // current keymapping is W A D.
+    
+    // W is jump. Pressing W while in air again will double jump.
+    // D is for moving right.
+    // A is for moving left.
+    
 
         if (e.getKeyCode() == (KeyEvent.VK_D))
         {
