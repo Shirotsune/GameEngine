@@ -9,9 +9,7 @@ public class Player
     /* This will give an illusion of a perfect double jump. */
 
 
-    /* Viewport - class needs to be implemented. */
 
-    /* Note on this game: the world is always drawn around the player-character!!!*/
     private static int x;
     private static int y;
     /* MOST IMPORANT X AND Y COORDS EVER! */
@@ -47,12 +45,10 @@ public class Player
 
     }
 
-    /**
-     * **************************************************************************
+    /*****************************************************************************
      * Note! Player getX and GetY are constant "origo" inside the game.
      * Rendering will always follow the player.
-     * **************************************************************************
-     */
+     * ***************************************************************************/
     public int getX()
     {
         return this.x;
@@ -69,13 +65,11 @@ public class Player
         graphics.fillOval(x, y, 60, 80);
     }
 
-    /**
-     * **********************************************************
+    /*************************************************************
      * jump() is called when player jumps right() is called when player wants to
      * move right left() is called when player wants to move left drop()
      * functionality is WIP (not yet designed).
-     * **********************************************************
-     */
+     ************************************************************/
 
 
     public void jump()
@@ -117,12 +111,10 @@ public class Player
         s = true;
     }
 
-    /**
-     * **
-     * PlayerAction(boolean input) handles the movement input. Returns false, if
-     * fails.
-     */
-
+  
+    // Handles player movement logic. Is called from Cardinal.
+    // The boolean values is the reason why the game can function real time. At each frame (or game cycle)
+    // the game will check, PlayerAction. If any of the motions are true then an action will be taken.
 
     public void PlayerAction()
     {
