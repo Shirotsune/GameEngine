@@ -1,6 +1,14 @@
 # GameEngine
 
-This Game Engine is a mesh example of how to do a real-time game using java swing utilities.
+With this release the game engines functionality compiles 100% and should run smoothly. 
+The whole creation history of this engine can be found under CV_PeliJavalla however some of the commentary can be in finnish because I never realised that the game engine would run this smoothly.
+
+I will add up on the engine section, if I would add up something really interesting to the basic engine mechanics. However the main purpose of this engine is to show one way how to do it. And that it could be used for learning purposes. This is not meant to be a game. Or used as a direct copy-paste.
+
+It's best that the code is analysed with the question: Why? was this done. Not ctrl+c and ctrl+v because it works. But rather ask why it works.
+
+
+# This Game Engine is a mesh example of how to do a real-time game using java swing utilities.
 
 Overview:
 
