@@ -1,6 +1,3 @@
-package CV_Gamefication;
-
-
 public class Main
 {
     /* 

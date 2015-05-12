@@ -1,4 +1,3 @@
-package CV_Gamefication;
 
 import java.awt.Graphics;
 import javax.swing.JPanel;

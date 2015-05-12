@@ -1,5 +1,3 @@
-package CV_Gamefication;
-
 import javax.swing.SwingUtilities;
 
 

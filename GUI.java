@@ -1,4 +1,3 @@
-package CV_Gamefication;
 import java.awt.Container;
 import java.awt.Dimension;
 import javax.swing.JFrame;
@@ -34,7 +33,7 @@ public class GUI implements Runnable
     @Override
     public void run() 
     {
-        frame = new JFrame("CV");
+        frame = new JFrame("Example");
         frame.setPreferredSize(new Dimension(resolutionX, resolutionY));
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

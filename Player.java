@@ -1,5 +1,3 @@
-package CV_Gamefication;
-
 import java.awt.Graphics;
 
 public class Player
@@ -68,7 +66,6 @@ public class Player
     /*************************************************************
      * jump() is called when player jumps right() is called when player wants to
      * move right left() is called when player wants to move left drop()
-     * functionality is WIP (not yet designed).
      ************************************************************/
 
 
